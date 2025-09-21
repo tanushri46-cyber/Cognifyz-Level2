@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-end Frameworks Task 1</title>
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #88647b;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #e4e8eb;
+      font-weight: 700;
+    }
+
+    /* Card Styles */
+    .card {
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      background: linear-gradient(145deg, #ffffff, #dfe9f3);
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+    }
+
+    .card-image img {
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 3px solid #00d1b2;
+      transition: transform 0.3s, filter 0.3s;
+    }
+
+    .card:hover .card-image img {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    .card-content .title {
+      color: #34495e;
+      font-weight: 700;
+    }
+
+    .card-content .content {
+      color: #4a4a4a;
+    }
+
+    .badge {
+      margin-right: 0.25rem;
+      font-size: 0.75rem;
+    }
+
+    .row.g-4 {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Front-end Frameworks </h1>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="C:\Users\tanus\OneDrive\Documents\landing page.jpg" alt="Landing Page">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Responsive Landing Page</p>
+            <p class="content">Crafted a visually stunning and fully responsive 
+                landing page using Bulma cards and Bootstrap grid,
+                 designed for seamless viewing across all devices.</p>
+            <div>
+              <span class="badge tag is-info"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="badge tag is-primary"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span class="badge tag is-link"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=https://d12y7sg0iam4lc.cloudfront.net/s/img/marketing/top-todo-app/to-do-list.png alt="To-Do App">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Interactive To-Do App</p>
+            <p class="content">Developed a dynamic to-do application with interactive Bulma cards, 
+                enabling users to track tasks efficiently with a responsive design..</p>
+            <div>
+              <span class="badge tag is-warning"><i class="fa-brands fa-js"></i> JS</span>
+              <span class="badge tag is-info"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="badge tag is-primary"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=https://images.ui8.net/uploads/1_1674725215822.png alt="Weather App">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Weather App</p>
+            <p class="content">Built a modern weather app fetching real-time data via APIs, 
+                presented through responsive cards with clean visuals and intuitive interface..</p>
+            <div>
+              <span class="badge tag is-link"><i class="fa-solid fa-cloud-sun"></i> API</span>
+              <span class="badge tag is-warning"><i class="fa-brands fa-js"></i> JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="C:\Users\tanus\OneDrive\Documents\png protfolio.jpg" alt="Portfolio Site">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Portfolio Website</p>
+            <p class="content">Designed a professional portfolio website showcasing multiple projects using Bulma cards and Bootstrap grid, 
+                highlighting responsive layouts and interactive elements.</p>
+            <div>
+              <span class="badge tag is-info"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="badge tag is-primary"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span class="badge tag is-link"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://static.wixstatic.com/media/0e0314_856bdf8b5611413aad5e1f2559656d2f~mv2.png/v1/fill/w_924,h_533,al_c,q_90,enc_avif,quality_auto/0e0314_856bdf8b5611413aad5e1f2559656d2f~mv2.png" alt="Blog Layout">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Blog Layout</p>
+            <p class="content">implemented a sleek blog layout with responsive cards, optimized for readability and engaging user experience on all screen sizes.</p>
+            <div>
+              <span class="badge tag is-info"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="badge tag is-primary"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span class="badge tag is-link"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src=https://cdn.dribbble.com/userupload/14233375/file/original-cbd806a48ad8161358f5f0e302bac6cd.png?crop=0x0-2400x1800&format=webp&resize=400x300&vertical=center alt="E-commerce Card">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">E-commerce Product Card</p>
+            <p class="content">Created stylish product cards for an e-commerce site, featuring hover animations, technology badges,
+                 and responsive design for all devices.</p>
+            <div>
+              <span class="badge tag is-warning"><i class="fa-brands fa-js"></i> JS</span>
+              <span class="badge tag is-info"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="badge tag is-primary"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
