@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage </title>
+  <link rel="stylesheet" href="Task 4.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Tanushri</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="C:\Users\tanus\OneDrive\Documents\123456.jpg" alt="Profile Image">
+        </div>
+        <div class="hero-text">
+            <h2>Hello...</h2>
+          <h1> I'm Tanushri</h1>
+          <p>Welcome to my portfolio. 🎓 I am a student at Brainware University, passionate about learning and exploring new technologies.
+            💻 I have a growing interest in web development and programming, and I am improving my skills in HTML, CSS, and JavaScript.
+            🌱 I love building projects, gaining practical knowledge, and preparing myself for future opportunities in the tech world.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn">View Portfolio</a>
+            <a href="#" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+
+</body>
+</html>
